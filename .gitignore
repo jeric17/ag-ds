@@ -1,0 +1,5 @@
+node_modules/
+/dist
+components/
+index.js
+index.d.ts
