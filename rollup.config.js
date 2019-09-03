@@ -6,14 +6,19 @@ import pkg from './package.json';
 export default {
   input: './src/index.ts',
   output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-    },
+    // for prod
+    // {
+    //   file: pkg.main,
+    //   format: 'cjs',
+    // },
+
+    // not used
+    // {
+    //   file: pkg.module,
+    //   format: 'es',
+    // },
+
+    // for testing
     {
       file: 'iife.js',
       format: 'iife',

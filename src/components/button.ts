@@ -4,7 +4,7 @@ import { LitElement, html, customElement } from 'lit-element';
 export class Button extends LitElement {
   render() {
     return html`
-      <button>Foo</button>
+      <button>FOOBAR</button>
     `;
   }
 }

@@ -3,6 +3,7 @@ module.exports = function(config) {
     frameworks: ["jasmine", "karma-typescript"],
     files: [
       "iife.js",
+      "testing/utils.ts",
       "src/**/*.spec.ts" // *.tsx for React Jsx
     ],
     exclude: [
@@ -20,7 +21,8 @@ module.exports = function(config) {
     autoWatch: true,
     colors: true,
     logLevel: config.LOG_INFO,
-    concurrency: Infinity,
-    singleRun: false
+    concurrency: 0,
+    singleRun: false,
+    browserDisconnectTimeout: 1000
   });
 };
