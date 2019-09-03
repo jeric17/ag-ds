@@ -11,8 +11,6 @@ export default {
     //   file: pkg.main,
     //   format: 'cjs',
     // },
-
-    // not used
     // {
     //   file: pkg.module,
     //   format: 'es',

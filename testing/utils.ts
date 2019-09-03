@@ -11,3 +11,27 @@ export function waitForComponentToRender(tag: string): Promise<Element> {
     requestComponent();
   });
 }
+
+export async function generate(tag: string) {
+  const ce = document.createElement(tag);
+  document.body.append(ce);
+  const el = await waitForComponentToRender(tag);
+
+  return el;
+}
+
+export function rm(node: Node) {
+  document.body.removeChild(node);
+}
+
+export function select(el: Element, tagName: string): Element {
+  return el.shadowRoot.querySelector(tagName);
+}
+
+export function tick(ms = 300) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
+}
