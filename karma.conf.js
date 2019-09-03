@@ -2,6 +2,7 @@ module.exports = function(config) {
   config.set({
     frameworks: ["jasmine", "karma-typescript"],
     files: [
+      "iife.js",
       "src/**/*.spec.ts" // *.tsx for React Jsx
     ],
     exclude: [
@@ -14,7 +15,7 @@ module.exports = function(config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     // reporters: ["progress", "karma-typescript"],
-    reporters: ["kjhtml", "spec"],
+    reporters: ["progress", "karma-typescript", "kjhtml", "spec"],
     browsers: ["Chrome"],
     autoWatch: true,
     colors: true,

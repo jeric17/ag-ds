@@ -14,6 +14,11 @@ export default {
       file: pkg.module,
       format: 'es',
     },
+    {
+      file: 'iife.js',
+      format: 'iife',
+      name: 'foo'
+    }
   ],
   // external: [ 'lit-element' ],
   plugins: [
