@@ -1,5 +1,5 @@
 node_modules/
 /dist
-components/
+/components
 index.js
 index.d.ts
