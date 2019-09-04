@@ -12,12 +12,15 @@ export function waitForComponentToRender(tag: string): Promise<Element> {
   });
 }
 
-export async function generate(tag: string, props: {key: string, value: any}[] = null) {
+export async function generate(tag: string, options: GenerateOptions = null) {
   const ce = document.createElement(tag);
-  if (props) {
-    props.forEach(({ key, value }) => {
+  if (options && options.props) {
+    options.props.forEach(({ key, value }) => {
       ce.setAttribute(key, value);
     });
+  }
+  if (options && options.content) {
+    ce.innerHTML = options.content;
   }
   document.body.append(ce);
   const el = await waitForComponentToRender(tag);
@@ -39,4 +42,9 @@ export function tick(ms = 300) {
       resolve();
     }, ms);
   });
+}
+
+class GenerateOptions {
+  props?: {key: string, value: any}[];
+  content?: string;
 }

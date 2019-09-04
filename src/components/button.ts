@@ -1,9 +1,9 @@
-import { LitElement, html, customElement, css } from 'lit-element';
+import { LitElement, html, customElement, css, CSSResult, TemplateResult } from 'lit-element';
 
 @customElement('ag-button')
 export class Button extends LitElement {
 
-  static get styles() {
+  static get styles(): CSSResult {
     return css`
       button {
         background-color: var(--primary-color);
@@ -12,6 +12,7 @@ export class Button extends LitElement {
         color: #fff;
         cursor: pointer;
         padding: 1em 2.5em;
+        outline: none;
         transition: background-color 0.3s ease-in;
       }
 
@@ -21,7 +22,7 @@ export class Button extends LitElement {
     `;
   }
 
-  render() {
+  render(): TemplateResult {
     return html`
       <button>
         <slot></slot>

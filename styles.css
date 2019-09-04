@@ -6,4 +6,9 @@ body {
   --primary-color: #54b948;
   --primary-dark-color: #47a03d;
   --font-family: 'Montserrat', sans-serif;
+  --light-color: #efefef;
+  --default-text-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
 }
