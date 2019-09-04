@@ -52,8 +52,7 @@ describe('Flex', () => {
         value: true
       }]
     });
-    tick();
+
     expect(el.classList.contains('padded')).toBeTruthy();
   });
-
 });

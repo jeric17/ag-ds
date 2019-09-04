@@ -20,6 +20,7 @@ export class Divider extends LitElement {
   }
 
   connectedCallback() {
+    super.connectedCallback();
     if (this.vertical) {
       this.classList.add('vertical');
     }

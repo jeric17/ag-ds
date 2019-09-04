@@ -14,43 +14,44 @@ export class Flex extends LitElement {
         box-sizing: border-box;
         display: flex;
       }
-      .justify-between {
+      :host(.justify-between) {
         justify-content: space-between;
       }
-      .justify-stretch {
+      :host(.justify-stretch) {
         justify-content: stretch;
       }
-      .justify-center {
+      :host(.justify-center) {
         justify-content: center;
       }
-      .justify-end {
+      :host(.justify-end) {
         justify-content: end;
       }
-      .items-center {
+      :host(.items-center) {
         align-items: center;
       }
-      .items-stretch {
+      :host(.items-stretch) {
         align-items: stretch;
       }
-      .items-end {
+      :host(.items-end) {
         align-items: center;
       }
-      .direction-column {
+      :host(.direction-column) {
         flex-direction: column;
       }
-      .direction-row-reverse {
+      :host(.direction-row-reverse) {
         flex-direction: row-reverse;
       }
-      .direction-column-reverse {
+      :host(.direction-column-reverse) {
         flex-direction: column-reverse;
       }
-      .padded {
+      :host(.padded) {
         padding: 1em;
       }
     `;
   }
 
   connectedCallback() {
+    super.connectedCallback();
     const data = [{
       k: 'justify',
       v: this.justify
