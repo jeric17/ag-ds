@@ -1,14 +1,18 @@
-import { LitElement, html, customElement, property, css, CSSResult, TemplateResult } from 'lit-element';
+import { LitElement, html, customElement, property, css, unsafeCSS, CSSResult, TemplateResult } from 'lit-element';
 
 @customElement('ag-flex')
 export class Flex extends LitElement {
 
   @property({ type: String }) direction: string;
   @property({ type: String }) items: string;
+  @property({ type: String }) smallDirection: string;
+  @property({ type: String }) smallItems: string;
+  @property({ type: String }) smallJustify: string;
   @property({ type: String }) justify: string;
   @property({ type: Boolean }) padded: boolean;
 
   static get styles(): CSSResult {
+
     return css`
       :host {
         box-sizing: border-box;
@@ -73,6 +77,15 @@ export class Flex extends LitElement {
   render(): TemplateResult {
 
     return html`
+      <style>
+        @media (max-width: 800px) and (orientation: portrait){
+          :host {
+            align-items: ${unsafeCSS(this.smallItems ? this.smallItems : this.items || 'flex-start')};
+            flex-direction: ${unsafeCSS(this.smallDirection ? this.smallDirection : this.direction || 'row')};
+            justify-content: ${unsafeCSS(this.smallJustify ? this.smallJustify : this.justify || 'flex-start')};
+          }
+        }
+      </style>
       <slot></slot>
     `;
   }
