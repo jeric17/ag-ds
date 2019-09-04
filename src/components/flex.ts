@@ -4,6 +4,7 @@ import { LitElement, html, customElement, property, css, unsafeCSS, CSSResult, T
 export class Flex extends LitElement {
 
   @property({ type: String }) direction: string;
+  @property({ type: Boolean }) fullHeight: boolean;
   @property({ type: String }) items: string;
   @property({ type: String }) smallDirection: string;
   @property({ type: String }) smallItems: string;
@@ -17,6 +18,9 @@ export class Flex extends LitElement {
       :host {
         box-sizing: border-box;
         display: flex;
+      }
+      :host(.full-height) {
+        height: 100%;
       }
       :host(.justify-between) {
         justify-content: space-between;
@@ -71,6 +75,9 @@ export class Flex extends LitElement {
     this.classList.add(...mapped);
     if (this.padded) {
       this.classList.add('padded');
+    }
+    if (this.fullHeight) {
+      this.classList.add('full-height');
     }
   }
 

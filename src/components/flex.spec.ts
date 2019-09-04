@@ -45,7 +45,7 @@ describe('Flex', () => {
     expect(el.classList.contains('items-center')).toBeTruthy();
   });
 
-  it('@ipadded should add a class', async () => {
+  it('@padded should add a class', async () => {
     el = await generate('ag-flex', {
       props: [{
         key: 'padded',
@@ -54,5 +54,16 @@ describe('Flex', () => {
     });
 
     expect(el.classList.contains('padded')).toBeTruthy();
+  });
+
+  it('@fullHeight should add a class', async () => {
+    el = await generate('ag-flex', {
+      props: [{
+        key: 'fullHeight',
+        value: true
+      }]
+    });
+
+    expect(el.classList.contains('full-height')).toBeTruthy();
   });
 });

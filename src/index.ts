@@ -1,3 +1,4 @@
+export { Banner } from './components/banner';
 export { Button } from './components/button';
 export { Card } from './components/card';
 export { Divider } from './components/divider';
