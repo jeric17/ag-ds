@@ -18,9 +18,8 @@ describe('Button', () => {
   });
 
   it('should render a button with content', () => {
-    let btn = select(el, 'button');
+    const btn = select(el, 'button');
     expect(btn).toBeTruthy();
-    btn = select(el, 'button');
     expect(el['innerText']).toBe('foo');
   });
 
