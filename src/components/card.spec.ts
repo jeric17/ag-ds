@@ -26,4 +26,15 @@ describe('Card', () => {
     expect(target.classList.contains('dark')).toBeTruthy();
   });
 
+  it('@padded should render padded class', async () => {
+    el = await generate('ag-card', {
+      props: [{
+        key: 'padded',
+        value: true
+      }]
+    });
+    const target = select(el, '.root');
+    expect(target.classList.contains('padded')).toBeTruthy();
+  });
+
 });

@@ -5,6 +5,7 @@ import { cx } from '../utils';
 export class Card extends LitElement {
 
   @property({ type: Boolean }) dark: boolean;
+  @property({ type: Boolean }) padded: boolean;
 
   static get styles(): CSSResult {
     return css`
@@ -17,7 +18,8 @@ export class Card extends LitElement {
 
   get cls() {
     return cx({
-      dark: this.dark
+      dark: this.dark,
+      padded: this.padded
     });
   }
 

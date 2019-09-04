@@ -18,6 +18,15 @@ export class Text extends LitElement {
     .primary {
       color: var(--primary-color);
     }
+    .secondary {
+      color: var(--secondary-color);
+    }
+    .success {
+      color: var(--success-color);
+    }
+    .warning {
+      color: var(--warning-color);
+    }
     .strong {
       font-weight: bold;
     }

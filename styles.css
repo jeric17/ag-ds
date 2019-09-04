@@ -5,6 +5,9 @@ html, body {
 body {
   --primary-color: #54b948;
   --primary-dark-color: #47a03d;
+  --secondary-color: #77dad9;
+  --success-color: #77da99;
+  --warning-color: #ffd551;
   --font-family: 'Montserrat', sans-serif;
   --light-color: #efefef;
   --default-text-color: #ffffff;
