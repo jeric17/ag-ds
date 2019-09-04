@@ -1,0 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  --primary-color: #54b948;
+  --primary-dark-color: #47a03d;
+  --font-family: 'Montserrat', sans-serif;
+}

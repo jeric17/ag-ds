@@ -12,8 +12,13 @@ export function waitForComponentToRender(tag: string): Promise<Element> {
   });
 }
 
-export async function generate(tag: string) {
+export async function generate(tag: string, props: {key: string, value: any}[] = null) {
   const ce = document.createElement(tag);
+  if (props) {
+    props.forEach(({ key, value }) => {
+      ce.setAttribute(key, value);
+    });
+  }
   document.body.append(ce);
   const el = await waitForComponentToRender(tag);
 

@@ -1,11 +1,10 @@
-import { generate, rm, select, tick } from '../../testing/utils';
+import { generate, rm, select } from '../../testing/utils';
 
 describe('Button', () => {
   let el: Element;
 
   beforeEach(async () => {
     el = await generate('ag-button');
-    el.setAttribute('color', '');
   });
 
   afterEach(() => {
@@ -22,15 +21,6 @@ describe('Button', () => {
     el.innerHTML = 'foo';
     btn = select(el, 'button');
     expect(el['innerText']).toBe('foo');
-  });
-
-  it('@color should add the correct class', async () => {
-    el.setAttribute('color', 'primary');
-
-    await tick();
-
-    let btn = select(el, 'button');
-    expect(btn.classList.contains('primary')).toBe(true);
   });
 
 });

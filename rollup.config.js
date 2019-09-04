@@ -7,14 +7,14 @@ export default {
   input: './src/index.ts',
   output: [
     // for prod
-    // {
-    //   file: pkg.main,
-    //   format: 'cjs',
-    // },
-    // {
-    //   file: pkg.module,
-    //   format: 'es',
-    // },
+    {
+      file: pkg.main,
+      format: 'cjs',
+    },
+    {
+      file: pkg.module,
+      format: 'es',
+    },
 
     // for testing
     {
