@@ -13,8 +13,8 @@ export class Divider extends LitElement {
         display: block;
         width: 100%;
       }
-      .vertical {
-        width: '8px';
+      :host(.vertical) {
+        width: 8px;
       }
     `;
   }

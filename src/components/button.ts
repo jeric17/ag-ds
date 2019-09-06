@@ -11,6 +11,7 @@ export class Button extends LitElement {
         box-sizing: border-box;
         color: #fff;
         cursor: pointer;
+        font-family: var(--font-family);
         padding: 1em 2.5em;
         outline: none;
         transition: background-color 0.3s ease-in;

@@ -14,6 +14,7 @@ export class Text extends LitElement {
       font-family: var(--font-family);
       color: var(--default-text-color);
       font-weight: normal;
+      transition: color 0.3s;
     }
     .primary {
       color: var(--primary-color);
@@ -33,13 +34,18 @@ export class Text extends LitElement {
     .subtle {
       color: var(--light-color);
     }
+    .p {
+      line-height: 32px;
+    }
     `;
   }
 
   get cx() {
     return cx({
       primary: Boolean(this.primary),
-      strong: Boolean(this.strong)
+      strong: Boolean(this.strong),
+      p: this.tag === 'p',
+      h: this.tag === 'h'
     });
   }
 
