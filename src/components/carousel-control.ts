@@ -11,6 +11,7 @@ export class CarouselControl extends LitElement {
         height: 100%;
         position: absolute;
         width: 100%;
+        z-index: 1;
       }
       .root {
         display: flex;

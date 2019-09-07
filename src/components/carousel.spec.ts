@@ -1,4 +1,4 @@
-import { generate, rm, select } from '../../testing/utils';
+import { generate, rm, select, tick } from '../../testing/utils';
 
 describe('Carousel', () => {
   let el: Element;
@@ -10,7 +10,11 @@ describe('Carousel', () => {
 
   beforeEach(async () => {
     el = await generate('ag-carousel', {
-      content
+      content,
+      props: [{
+        key: 'currentItem',
+        value: 0
+      }]
     });
   });
 
@@ -24,16 +28,20 @@ describe('Carousel', () => {
 
   it('should load contents', () => {
     expect(el.children.length).toBe(3);
-    expect(el.children[0].classList.contains('active')).toBeTruthy();
-    expect(el.children[1].classList.contains('active')).toBeFalsy();
   });
 
-  it('should handle next', () => {
+  it('should handle next', async () => {
     const control = select(el, 'ag-carousel-control');
     control.dispatchEvent(new CustomEvent('ag-next', { composed: true, bubbles: true }));
+    await tick(100);
     expect(el.getAttribute('currentItem')).toBe('1');
   });
 
-  it('should handle previous');
+  it('should handle previous', async () => {
+    const control = select(el, 'ag-carousel-control');
+    control.dispatchEvent(new CustomEvent('ag-previous', { composed: true, bubbles: true }));
+    await tick(100);
+    expect(el.getAttribute('currentItem')).toBe('2');
+  });
 
 });
