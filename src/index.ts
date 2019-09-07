@@ -2,6 +2,8 @@ export { Banner } from './components/banner';
 export { Text } from './components/text';
 export { Button } from './components/button';
 export { Card } from './components/card';
+export { CarouselControl } from './components/carousel-control';
+export { Carousel } from './components/carousel';
 export { Divider } from './components/divider';
 export { Flex } from './components/flex';
 export { Heading } from './components/heading';

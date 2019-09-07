@@ -24,7 +24,6 @@ export async function generate(tag: string, options: GenerateOptions = null) {
   }
   document.body.append(ce);
   const el = await waitForComponentToRender(tag);
-
   return el;
 }
 
@@ -42,6 +41,16 @@ export function tick(ms = 300) {
       resolve();
     }, ms);
   });
+}
+
+export function newEvent(eventName: string, triggerEvent: string, el: Element, dispatcher: HTMLElement) {
+  let called = false;
+  el.addEventListener(eventName, () => {
+    called = true;
+  })
+
+  dispatcher.dispatchEvent(new Event(triggerEvent));
+  return called;
 }
 
 class GenerateOptions {

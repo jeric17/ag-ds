@@ -1,4 +1,4 @@
-import { generate, rm, select } from '../../testing/utils';
+import { generate, rm } from '../../testing/utils';
 
 describe('Banner', () => {
   let el: Element;

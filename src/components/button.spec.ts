@@ -1,4 +1,5 @@
 import { generate, rm, select } from '../../testing/utils';
+// import { Button } from './button';
 
 describe('Button', () => {
   let el: Element;
@@ -15,6 +16,7 @@ describe('Button', () => {
 
   it('should be created', () => {
     expect(el).toBeTruthy();
+    // expect(Button.render).toBeTruthy();
   });
 
   it('should render a button with content', () => {
