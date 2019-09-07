@@ -15,9 +15,28 @@ export class CarouselControl extends LitElement {
       .root {
         display: flex;
         justify-content: space-between;
-        box-sizing: border-box;
-        padding: 0 1em;
         width: 100%;
+      }
+      .control {
+        align-items: center;
+        background-color: rgba(23, 23, 23, 0.5);
+        cursor: pointer;
+        display: flex;
+        height: 53px;
+        justify-content: center;
+        width: 47px;
+        transition: background-color 0.3s;
+      }
+      .control:hover {
+        background-color: #1a1a1a;
+      }
+      .control:hover svg {
+        transform: scale(0.85);
+      }
+      svg {
+        transform: scale(1);
+        transition: all 0.3s;
+        width: 15px;
       }
     `;
   }
@@ -33,8 +52,12 @@ export class CarouselControl extends LitElement {
   render(): TemplateResult {
     return html`
       <div class="root">
-        <div class="previous" @click="${this.handleControlEvent.bind(this, 'previous')}">&lt;</div>
-        <div class="next" @click="${this.handleControlEvent.bind(this, 'next')}">&gt;</div>
+        <div class="control previous" @click="${this.handleControlEvent.bind(this, 'previous')}">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.06 129.4"><defs><style>.cls-1{fill:none;stroke:silver;stroke-miterlimit:10;stroke-width:9px;}</style></defs><title>chevron</title><polyline class="cls-1" points="67.88 126.22 6.36 64.7 67.88 3.18"/></svg>
+        </div>
+        <div class="control next" @click="${this.handleControlEvent.bind(this, 'next')}">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.06 129.4"><defs><style>.cls-1{fill:none;stroke:silver;stroke-miterlimit:10;stroke-width:9px;}</style></defs><title>rightchevron</title><polyline class="cls-1" points="3.18 3.18 64.7 64.7 3.18 126.22"/></svg>
+        </div>
       </div>
     `;
   }
