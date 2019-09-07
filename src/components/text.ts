@@ -4,16 +4,22 @@ import { cx } from '../utils';
 @customElement('ag-text')
 export class Text extends LitElement {
 
-  @property({ type: Boolean }) primary: string;
-  @property({ type: Boolean }) strong: string;
+  @property({ type: Boolean }) primary: boolean;
+  @property({ type: Boolean }) light: boolean;
+  @property({ type: Boolean }) success: boolean;
+  @property({ type: Boolean }) warning: boolean;
+  @property({ type: Boolean }) strong: boolean;
+  @property({ type: Boolean }) nowrap: boolean;
+  @property({ type: Boolean }) thin: boolean;
   @property({ type: String }) tag: string = 'p';
+  @property({ type: String }) textAlign: string;
 
   static get styles(): CSSResult {
     return css`
     .root {
       font-family: var(--font-family);
       color: var(--default-text-color);
-      font-weight: normal;
+      font-weight: var(--font-weight, 300);
       transition: color 0.3s;
     }
     .primary {
@@ -21,6 +27,9 @@ export class Text extends LitElement {
     }
     .secondary {
       color: var(--secondary-color);
+    }
+    .light {
+      color: var(--light-text-color);
     }
     .success {
       color: var(--success-color);
@@ -37,13 +46,32 @@ export class Text extends LitElement {
     .p {
       line-height: 32px;
     }
+    .nowrap {
+      white-space: nowrap;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .thin {
+      font-weight: 200;
+    }
     `;
   }
 
   get cx() {
     return cx({
-      primary: Boolean(this.primary),
+      primary: this.primary,
+      light: this.light,
+      warning: this.warning,
+      thin: this.thin,
+      success: this.success,
       strong: Boolean(this.strong),
+      nowrap: this.nowrap,
+      center: this.textAlign === 'center',
+      right: this.textAlign === 'right',
       p: this.tag === 'p',
       h: this.tag === 'h'
     });

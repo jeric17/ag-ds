@@ -29,7 +29,7 @@ export class Link extends LitElement {
   render(): TemplateResult {
     return html`
       <div class="root">
-        <ag-text ?primary="${this.active}">
+        <ag-text ?primary="${this.active}" nowrap>
           <slot></slot>
         </ag-text>
         <div class="line${this.active ? ' active': ''}"></div>

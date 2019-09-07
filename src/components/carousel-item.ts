@@ -8,6 +8,7 @@ export class CarouselItem extends LitElement {
   static get styles(): CSSResult {
     return css`
       :host, .root {
+        display: block;
         height: 100%;
         min-width: 100vw;
         width: 100%;

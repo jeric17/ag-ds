@@ -6,6 +6,7 @@ export { CarouselItem } from './components/carousel-item';
 export { CarouselControl } from './components/carousel-control';
 export { Carousel } from './components/carousel';
 export { Divider } from './components/divider';
+export { Image } from './components/image';
 export { Flex } from './components/flex';
 export { Heading } from './components/heading';
 export { Link } from './components/link';

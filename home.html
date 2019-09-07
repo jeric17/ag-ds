@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./dist/index.es.js"></script>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <ag-flex direction="column" items="center">
+
+        <!-- Main nav START -->
+        <nav class="nav">
+          <div class="container">
+            <ag-flex justify="space-between" items="center">
+              <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
+              <ag-flex justify="flex-end">
+                <ag-link class="nav-item" active>
+                  <a href="/">HOME</a>
+                </ag-link>
+                <ag-link class="nav-item">
+                  <a href="/">MARKETS SERVED</a>
+                </ag-link>
+                <ag-link class="nav-item">
+                  <a href="/">MEET THE TEAM</a>
+                </ag-link>
+                <ag-link class="nav-item">
+                  <a href="/">MEDIA</a>
+                </ag-link>
+                <ag-link>
+                  <a href="/">CONTACT US</a>
+                </ag-link>
+              </ag-flex>
+            </ag-flex><!-- Main nav END -->
+          </div>
+        </nav>
+
+        <ag-carousel>
+          <ag-carousel-item imageurl="/assets/bg01.jpg">
+            <div class="container">
+              <ag-flex direction="column">
+                <ag-text tag="h" textalign="center" light thin>
+                  <h1><span class="primary-text strong">AgTech Insight</span> AgTech Insight is a full service consulting and advisory firm offering expertise to ensure success and projection in today’s global economy.</h1>
+                </ag-text>
+                <ag-divider></ag-divider>
+                <ag-text tag="h" textalign="center" light>
+                  <h2>
+                    Our team consists of <span class="primary-text strong">experienced, top-level agriculture</span> and <span class="primary-text strong">technology professionals</span> from around the world.
+                  </h2>
+                </ag-text>
+              </ag-flex>
+            </div>
+          </ag-carousel-item><!-- Carousel 1 -->
+
+          <ag-carousel-item imageurl="/assets/bg.jpg">
+            <div class="container">
+              <ag-flex direction="column">
+                <ag-text tag="h" textalign="center" light thin>
+                  <h1>
+                    Ag-based insight <span class="primary-text strong">integrating the technology, investment,</span> & <span class="strong primary-text">agri-culture worlds together</span> to ensure a more fruitful future.
+                  </h1>
+                </ag-text>
+              </ag-flex>
+            </div>
+          </ag-carousel-item><!-- Carousel 2 -->
+
+          <ag-carousel-item imageurl="/assets/bg02.jpg">
+            <div class="container">
+              <ag-flex direction="column">
+                <ag-text tag="h" textalign="center" thin>
+                  <h1>
+                    SEE THE
+                  </h1>
+                </ag-text>
+                <ag-text tag="h" textalign="center" light strong>
+                  <h1>
+                    NEW AGTECH MARKET MAP
+                  </h1>
+                </ag-text>
+              </ag-flex>
+            </div>
+          </ag-carousel-item><!-- Carousel 3 -->
+
+          <ag-carousel-item imageurl="/assets/bg04.jpg">
+            <div class="container">
+              <ag-flex direction="column">
+                <ag-text tag="h" textalign="center" light strong>
+                  <h1>
+                    AgTech Grower Audit
+                  </h1>
+                </ag-text>
+                <ag-text textalign="center">
+                  <h1>
+                    Helping growers <span class="strong primary-text">maximize the ROI</span> of their current and future technologies
+                  </h1>
+                </ag-text>
+              </ag-flex>
+            </div>
+          </ag-carousel-item><!-- Carousel 4 -->
+        </ag-carousel>
+      </ag-flex>
+    </main>
+  </body>
+</html>
+nav

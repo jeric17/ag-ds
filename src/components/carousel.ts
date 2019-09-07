@@ -22,8 +22,9 @@ export class Carousel extends LitElement {
       .content {
         display: flex;
         position: relative;
-        transition: all 0.5s ease-out;
+        transition: all 0.5s;
         left: 0px;
+        width: 100vw;
       }
       ::slotted(.carousel-item) {
         min-width: 100vw;

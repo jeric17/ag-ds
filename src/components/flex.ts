@@ -22,8 +22,11 @@ export class Flex extends LitElement {
       :host(.full-height) {
         height: 100%;
       }
-      :host(.justify-between) {
+      :host(.justify-space-between) {
         justify-content: space-between;
+      }
+      :host(.justify-space-around) {
+        justify-content: space-around;
       }
       :host(.justify-stretch) {
         justify-content: stretch;
