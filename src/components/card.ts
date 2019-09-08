@@ -12,6 +12,10 @@ export class Card extends LitElement {
       .root {
         background-color: #1a1a1a;
         opacity: 0.85;
+        box-sizing: border-box;
+      }
+      .padded {
+        padding: 2em;
       }
     `;
   }

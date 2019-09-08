@@ -66,11 +66,20 @@ a {
   line-height: 0;
 }
 .about-us {
-  --light-text-color: #c0c0c0;
   background-color: #131313;
   padding: 2em 0;
   box-sizing: border-box;
 }
 .about-image {
   margin: 0 0 0 3em;
+}
+.how-we-work {
+  background-image: url(/assets/how-we-work.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3em 0;
+}
+.how-we-work-card {
+  display: block;
+  width: 580px;
 }
