@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="../dist/index.es.js"></script>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <ag-flex direction="column" items="center">
+
+        <!-- Main nav START -->
+        <nav class="nav top-nav">
+          <div class="container">
+            <ag-flex justify="space-between" items="center">
+              <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
+              <ag-flex justify="end">
+                <ag-link class="nav-item" activeLink="/home">
+                  <a href="/">HOME</a>
+                </ag-link>
+                <ag-menu>
+                  <ag-link style="margin-right: 2em;" slot="menu" activeLink="/markets-served">
+                    <a href="/">MARKETS SERVED</a>
+                  </ag-link>
+                  <ag-flex direction="column" slot="menu-list">
+                    <ag-link activeLink="/markets-served/grower-agtech-audit" noline>
+                      <a href="/markets-served/grower-agtech-audit">Grower AgTech Audit</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/corporate-and-retailers" noline>
+                      <a href="/markets-served/corporate-and-retailers">Corporates and retailers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/agribusiness" noline>
+                      <a href="/markets-served/agribusiness">Agribusiness</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/growers-packers-shippers" noline>
+                      <a href="/markets-served/growers-packers-shippers">Growers packers shippers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/investors" noline>
+                      <a href="/markets-served/investors">Investors</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/governments" noline>
+                      <a href="/markets-served/governments">Governments</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/non-government-organisations" noline>
+                      <a href="/markets-served/non-government-organisations">Non Government Organisations (NGO)</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/public-speaking-and-events" noline>
+                      <a href="/markets-served/public-speaking-and-events">Public Speaking and Events</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/startups-and-accererators" noline>
+                      <a href="/markets-served/startups-and-accererators">Startups and accererators</a>
+                    </ag-link>
+                  </ag-flex>
+                </ag-menu>
+                <ag-link class="nav-item" activeLink="/meet-the-team">
+                  <a href="/">MEET THE TEAM</a>
+                </ag-link>
+                <ag-link class="nav-item" activeLink="/media">
+                  <a href="/">MEDIA</a>
+                </ag-link>
+                <ag-link activeLink="/contact-us">
+                  <a href="/">CONTACT US</a>
+                </ag-link>
+              </ag-flex>
+            </ag-flex><!-- Main nav END -->
+          </div>
+        </nav><!-- Nav -->
+
+
+        <div class="banner">
+          <ag-flex justify="center" items="center" fullheight>
+            <ag-text tag="h" strong light>
+              <h1 class="large-text">
+                Public <span class="primary-text">Speaking</span> and Events
+              </h1>
+            </ag-text>
+          </ag-flex>
+        </div>
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text light>
+                    <p>As global leaders in the AgTech movement, Aaron and many team members have spoke at many prestigious events. We keep the audience engaged and involved by delivering passionate and exciting insights geared to our target audience including keynotes, panel discussions and moderation and general speaking.</p>
+                  </ag-text>
+                  <ag-divider height="24px"></ag-divider>
+                  <ag-toggle>
+                    <ag-text>
+                      <p>Some of the topics have included: Using Tech in Ag, The New AgTech Revolution, AgTech Trends, Startups – Make It or Break It, Best Practices in Ag, Growers investing in AgTech and more! We have presented to groups of over 1,500 to delegations in both the public and private sector  entrepreneurs, investors and industry. </p>
+                    </ag-text>
+                  </ag-toggle>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card><!-- Main Text Content END -->
+
+        <ag-flex justify="center">
+          <div class="container">
+            <div class="content-wrapper">
+              <ag-flex
+                direction="column"
+                items="center"
+              >
+                <ag-button>SCHEDULE AN APPOINTMENT</ag-button>
+              </ag-flex>
+            </div>
+          </div>
+        </ag-flex><!-- Survey END -->
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text primary tag="h" strong>
+                    <h3>AREAS OF EXPERTISE</h3>
+                  </ag-text>
+                  <ag-divider></ag-divider>
+                  <ag-flex justify="space-between" smalldirection="column">
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Keynote addresses
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Group speaking
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Panel planning and moderation
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Panel participation
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Guided group discussion
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 1 END -->
+
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Breakout sessions
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Pitch judging
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Pitch event planning
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Workshops
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 2 END -->
+                  </ag-flex>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card>
+
+      </ag-flex><!-- Root Flex End -->
+    </main>
+  </body>
+</html>
