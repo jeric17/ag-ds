@@ -32,7 +32,7 @@ export class Menu extends LitElement {
         display: none;
         position: absolute;
         padding: 1em;
-        transform-origin: center;
+        transform-origin: top left;
         transition: all 0.3s;
       }
       .removing {

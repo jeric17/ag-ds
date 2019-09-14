@@ -5,6 +5,7 @@ import { cx } from '../utils';
 export class Text extends LitElement {
 
   @property({ type: Boolean }) primary: boolean;
+  @property({ type: Boolean }) small: boolean;
   @property({ type: Boolean }) italic: boolean;
   @property({ type: Boolean }) light: boolean;
   @property({ type: Boolean }) success: boolean;
@@ -23,6 +24,9 @@ export class Text extends LitElement {
       color: var(--default-text-color);
       font-weight: var(--font-weight, 300);
       transition: color 0.3s;
+    }
+    .small {
+      font-size: 13px;
     }
     .primary {
       color: var(--primary-color);
@@ -80,7 +84,8 @@ export class Text extends LitElement {
       center: this.textAlign === 'center',
       right: this.textAlign === 'right',
       p: this.tag === 'p',
-      h: this.tag === 'h'
+      h: this.tag === 'h',
+      small: this.small
     });
   }
 

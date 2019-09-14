@@ -96,8 +96,9 @@
                         <h4>WE OFFER 3 GROWER AGTECH AUDIT PACKAGES</h4>
                       </ag-text>
                       <ag-divider height="20px"></ag-divider>
-                      <ag-flex justify="space-between" smalldirection="column">
-                        <ag-flex direction="column">
+                      <ag-flex justify="space-between" items="flex-start" smalldirection="column">
+                        <!-- column 1 START -->
+                        <ag-flex direction="column" padded>
                           <ag-text secondary tag="h" strong>
                             <h4>Basic-Quick Grower AgTech Audit</h4>
                           </ag-text>
@@ -106,67 +107,107 @@
                           </ag-text>
                           <ag-divider></ag-divider>
                           <ag-list-item color="secondary">
-                            <ag-text>
+                            <ag-text small>
                               <p>Gross revenue of <span class="secondary-text strong">less than $5M</span></p>
                             </ag-text>
                           </ag-list-item>
                           <ag-list-item color="secondary">
-                            <ag-text>
-                              <p>Taret <span class="secondary-text strong">1 crop</span></p>
+                            <ag-text small>
+                              <p>Target <span class="secondary-text strong">1 crop</span></p>
                             </ag-text>
                           </ag-list-item>
                           <ag-text secondary tag="h" strong>
-                            <h4>INCLUDES:</h4>
+                            <h5>INCLUDES:</h5>
                           </ag-text>
                           <ag-list-item color="secondary">
-                            <ag-text secondary>
+                            <ag-text small secondary>
                               <p>Includes 1 day with one auditor onsite</p>
                             </ag-text>
                           </ag-list-item>
                           <ag-list-item color="secondary">
-                            <ag-text>
+                            <ag-text small>
                               <p>Presentation of findings and next steps</p>
                             </ag-text>
                           </ag-list-item>
                         </ag-flex><!-- column 1 END -->
 
-                        <ag-flex direction="column">
+                        <!-- column 2 START -->
+                        <ag-flex direction="column" padded>
                           <ag-text success tag="h" strong>
-                            <h4>Presentation of findings and next steps</h4>
+                            <h4>Mid-size Grower AgTech Audit</h4>
                           </ag-text>
                           <ag-text success>
                             <p class="no-margin">Price: $12,000</p>
                           </ag-text>
                           <ag-divider></ag-divider>
                           <ag-list-item color="success">
-                            <ag-text>
+                            <ag-text small>
                               <p>Gross revenue of <span class="success-text strong">less than $15M</span></p>
                             </ag-text>
                           </ag-list-item>
                           <ag-list-item color="success">
-                            <ag-text>
+                            <ag-text small>
                               <p>Target up to <span class="success-text strong">3 most valuable crops</span></p>
                             </ag-text>
                           </ag-list-item>
                           <ag-text success tag="h" strong>
-                            <h4>INCLUDES:</h4>
+                            <h5>INCLUDES:</h5>
                           </ag-text>
                           <ag-list-item color="success">
-                            <ag-text>
+                            <ag-text small>
                               <p>Initial planning</p>
                             </ag-text>
                           </ag-list-item>
                           <ag-list-item color="success">
-                            <ag-text strong success>
-                              <h4>3 days with one auditor onsite and 3-hour recap</h4>
+                            <ag-text strong success small>
+                              <p>3 days with one auditor onsite and 3-hour recap</p>
                             </ag-text>
                           </ag-list-item>
                           <ag-list-item color="success">
-                            <ag-text>
+                            <ag-text small>
                               <p>Presentation of findings and next steps</p>
                             </ag-text>
                           </ag-list-item>
                         </ag-flex><!-- column 2 END -->
+
+                        <!-- column 3 START -->
+                        <ag-flex direction="column" padded>
+                          <ag-text warning tag="h" strong>
+                            <h4>Large Grower AgTech Audit</h4>
+                          </ag-text>
+                          <ag-text warning>
+                            <p class="no-margin">Price: $25,000</p>
+                          </ag-text>
+                          <ag-divider></ag-divider>
+                          <ag-list-item color="warning">
+                            <ag-text small>
+                              <p>Gross revenue of <span class="warning-text strong">over $15M</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="warning">
+                            <ag-text small>
+                              <p>Target up to <span class="warning-text strong">5 most valuable crops</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-text warning tag="h" strong>
+                            <h5>INCLUDES:</h5>
+                          </ag-text>
+                          <ag-list-item color="warning">
+                            <ag-text small>
+                              <p>Initial planning</p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="warning">
+                            <ag-text strong warning small>
+                              <p>2 days with all 3 auditors onsite and 4-hour recap</p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="warning">
+                            <ag-text small>
+                              <p>Presentation of findings and next steps</p>
+                            </ag-text>
+                          </ag-list-item>
+                        </ag-flex><!-- column 3 END -->
                       </ag-flex>
                     </ag-flex>
                   </ag-toggle>
@@ -202,7 +243,7 @@
                     <h3>AREAS OF EXPERTISE</h3>
                   </ag-text>
                   <ag-divider></ag-divider>
-                  <ag-flex justify="space-between">
+                  <ag-flex justify="space-between" smalldirection="column">
                     <ag-flex direction="column">
                       <ag-list-item>
                         <ag-text>

@@ -5,16 +5,25 @@ import { cx } from '../utils';
 export class Toggle extends LitElement {
 
   @property({ type: String }) buttonText = 'READ MORE';
-  @property({ type: String }) buttonToggleText = 'READ LESS';
+  @property({ type: String }) buttonToggleText = 'VIEW LESS';
   @property({ type: Boolean }) show = false;
 
   static get styles(): CSSResult {
     return css`
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
       .root {
         display: flex;
         flex-direction: column;
       }
       .content {
+        animation: fadeIn 0.3s;
         display: none;
       }
       .show .content {
