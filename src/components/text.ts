@@ -5,6 +5,7 @@ import { cx } from '../utils';
 export class Text extends LitElement {
 
   @property({ type: Boolean }) primary: boolean;
+  @property({ type: Boolean }) italic: boolean;
   @property({ type: Boolean }) light: boolean;
   @property({ type: Boolean }) success: boolean;
   @property({ type: Boolean }) warning: boolean;
@@ -58,12 +59,16 @@ export class Text extends LitElement {
     .thin {
       font-weight: 200;
     }
+    .italic {
+      font-style: italic;
+    }
     `;
   }
 
   get cx() {
     return cx({
       primary: this.primary,
+      italic: this.italic,
       light: this.light,
       warning: this.warning,
       thin: this.thin,

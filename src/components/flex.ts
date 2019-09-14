@@ -18,6 +18,7 @@ export class Flex extends LitElement {
       :host {
         box-sizing: border-box;
         display: flex;
+        width: 100%;
       }
       :host(.full-height) {
         height: 100%;
@@ -35,7 +36,7 @@ export class Flex extends LitElement {
         justify-content: center;
       }
       :host(.justify-end) {
-        justify-content: end;
+        justify-content: flex-end;
       }
       :host(.items-center) {
         align-items: center;

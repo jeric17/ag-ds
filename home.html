@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="module" src="./dist/index.es.js"></script>
     <link href="./styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
@@ -10,24 +10,55 @@
       <ag-flex direction="column" items="center">
 
         <!-- Main nav START -->
-        <nav class="nav">
+        <nav class="nav top-nav">
           <div class="container">
             <ag-flex justify="space-between" items="center">
               <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
-              <ag-flex justify="flex-end">
-                <ag-link class="nav-item" active>
+              <ag-flex justify="end">
+                <ag-link class="nav-item" activeLink="/home">
                   <a href="/">HOME</a>
                 </ag-link>
-                <ag-link class="nav-item">
-                  <a href="/">MARKETS SERVED</a>
-                </ag-link>
-                <ag-link class="nav-item">
+                <ag-menu>
+                  <ag-link style="margin-right: 2em;" slot="menu" activeLink="/markets-served">
+                    <a href="/">MARKETS SERVED</a>
+                  </ag-link>
+                  <ag-flex direction="column" slot="menu-list">
+                    <ag-link activeLink="/markets-served/grower-agtech-audit">
+                      <a href="/markets-served/grower-agtech-audit">Grower AgTech Audit</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/corporate-and-retailers">
+                      <a href="/markets-served/corporate-and-retailers">Corporates and retailers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/agribusiness">
+                      <a href="/markets-served/agribusiness">Agribusiness</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/growers-packers-shippers">
+                      <a href="/markets-served/growers-packers-shippers">Growers packers shippers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/investors">
+                      <a href="/markets-served/investors">Investors</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/governments">
+                      <a href="/markets-served/governments">Governments</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/non-government-organisations">
+                      <a href="/markets-served/non-government-organisations">Non Government Organisations (NGO)</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/public-speaking-and-events">
+                      <a href="/markets-served/public-speaking-and-events">Public Speaking and Events</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/startups-and-accererators">
+                      <a href="/markets-served/startups-and-accererators">Startups and accererators</a>
+                    </ag-link>
+                  </ag-flex>
+                </ag-menu>
+                <ag-link class="nav-item" activeLink="/meet-the-team">
                   <a href="/">MEET THE TEAM</a>
                 </ag-link>
-                <ag-link class="nav-item">
+                <ag-link class="nav-item" activeLink="/media">
                   <a href="/">MEDIA</a>
                 </ag-link>
-                <ag-link>
+                <ag-link activeLink="/contact-us">
                   <a href="/">CONTACT US</a>
                 </ag-link>
               </ag-flex>
@@ -40,11 +71,11 @@
             <div class="container">
               <ag-flex direction="column">
                 <ag-text tag="h" textalign="center" light thin>
-                  <h1><span class="primary-text strong">AgTech Insight</span> AgTech Insight is a full service consulting and advisory firm offering expertise to ensure success and projection in today’s global economy.</h1>
+                  <h1 class="carousel1-h1"><span class="primary-text strong">AgTech Insight</span> AgTech Insight is a full service consulting and advisory firm offering expertise to ensure success and projection in today’s global economy.</h1>
                 </ag-text>
                 <ag-divider></ag-divider>
                 <ag-text tag="h" textalign="center" light>
-                  <h2>
+                  <h2 class="carousel1-h2">
                     Our team consists of <span class="primary-text strong">experienced, top-level agriculture</span> and <span class="primary-text strong">technology professionals</span> from around the world.
                   </h2>
                 </ag-text>
@@ -66,7 +97,7 @@
 
           <ag-carousel-item imageurl="/assets/bg02.jpg">
             <div class="container">
-              <ag-flex direction="column">
+              <ag-flex direction="column" justify="center" smallitems="center">
                 <ag-text tag="h" textalign="center" thin>
                   <h1 class="no-margin no-lineheight">
                     See The
@@ -102,7 +133,7 @@
       <div class="about-us">
         <ag-flex justify="center">
           <div class="container">
-            <ag-flex smalldirection="column">
+            <ag-flex smalldirection="column-reverse" smallitems="center">
               <ag-flex direction="column">
                 <ag-heading>
                   <ag-text tag="h" strong>
@@ -118,7 +149,7 @@
                   LEARN MORE ABOUT IT
                 </ag-button>
               </ag-flex>
-              <ag-image class="about-image" imageurl="/assets/about.png" imagewidth="330px"></ag-image>
+              <ag-image class="about-image" imageurl="/assets/about.png" imagewidth="300px"></ag-image>
             </ag-flex>
           </div>
         </ag-flex>
@@ -142,7 +173,132 @@
             </ag-card>
           </div><!-- How we work Card End -->
         </ag-flex>
-      </div>
+      </div><!-- How we work card END -->
+
+      <ag-flex justify="center" class="steps">
+        <div class="container">
+          <ag-flex smalldirection="column">
+            <ag-card padded dark>
+              <ag-flex direction="column">
+                <ag-flex justify="space-between">
+                  <ag-flex direction="column">
+                    <ag-text light tag="h">
+                      <h3>STEP 1</h3>
+                    </ag-text>
+                    <ag-text primary tag="h">
+                      <h2>ANALYZE</h2>
+                    </ag-text>
+                  </ag-flex>
+                  <ag-image imageurl="/assets/step1.png" imagewidth="60px"></ag-image>
+                </ag-flex>
+                <ag-divider></ag-divider>
+                <ag-text>
+                  <p>We begin with a comprehensive survey which enables us to efficiently dive into the pain points of your organization, product, or launch plans. </p>
+                </ag-text>
+              </ag-flex>
+            </ag-card><!-- Step 1 Card End -->
+
+            <ag-card padded dark>
+              <ag-flex direction="column">
+                <ag-flex justify="space-between">
+                  <ag-flex direction="column">
+                    <ag-text light tag="h">
+                      <h3>STEP 1</h3>
+                    </ag-text>
+                    <ag-text primary tag="h">
+                      <h2>STRATEGIZE</h2>
+                    </ag-text>
+                  </ag-flex>
+                  <ag-image imageurl="/assets/step2.png" imagewidth="60px"></ag-image>
+                </ag-flex>
+                <ag-divider></ag-divider>
+                <ag-text>
+                  <p>After analyzing your painpoints we use a series of interviews, demos, and team meetings with the key people of your organization to then find areas for improvement, Integrations, Innovations, realignment and/or restructuring as needed. </p>
+                </ag-text>
+              </ag-flex>
+            </ag-card><!-- Step 2 Card End -->
+
+            <ag-card padded dark>
+              <ag-flex direction="column">
+                <ag-flex justify="space-between">
+                  <ag-flex direction="column">
+                    <ag-text light tag="h">
+                      <h3>STEP 1</h3>
+                    </ag-text>
+                    <ag-text primary tag="h">
+                      <h2>OPTIMIZE</h2>
+                    </ag-text>
+                  </ag-flex>
+                  <ag-image imageurl="/assets/step3.png" imagewidth="60px"></ag-image>
+                </ag-flex>
+                <ag-divider></ag-divider>
+                <ag-text>
+                  <p>With the information gathered in steps 1 &2, we now have the knowlage to work with our team members and come back to you with a stratigic plan and roadmap toward solving your painpoints and the realignment toward success. </p>
+                </ag-text>
+              </ag-flex>
+            </ag-card><!-- Step 3 Card End -->
+          </ag-flex>
+        </div>
+      </ag-flex><!-- Steps END -->
+
+      <ag-flex class="testimonial-section" justify="center" padded>
+        <div class="container">
+          <ag-flex direction="column">
+            <ag-divider height="20px"></ag-divider>
+            <ag-text textalign="center" italic>
+              <p><em>"Aaron provided keen product feedback, market insight and connections enabling reduced GTM development time. His past work developing his own platform added to many embedded relationships in Ag Tech were invaluable."</em></p>
+            </ag-text>
+            <ag-divider></ag-divider>
+            <ag-text textalign="center" light>
+              <p><span class="primary-text thin">-Todd Rinkenberger,</span> Director of Business Development, Netafim USA</p>
+            </ag-text>
+            <ag-divider height="20px"></ag-divider>
+          </ag-flex>
+        </div>
+      </ag-flex><!-- Testimonial END -->
+
+      <ag-flex justify="center" padded class="whats-new">
+        <div class="container">
+          <ag-flex direction="column">
+            <ag-divider height="20px"></ag-divider>
+            <ag-heading>
+              <ag-text tag="h" light strong>
+                <h1>What's New?</h1>
+              </ag-text>
+            </ag-heading>
+            <ag-divider></ag-divider>
+            <ag-text>
+              <h1><span class="primary-text strong">Market Map</span> <span class="small-heading">IS COMING SOON!</span></h1>
+            </ag-text>
+            <ag-divider></ag-divider>
+            <ag-text light strong>
+              <h2><span class="primary-text">Introducing Grower Agtech</span> Audit</h2>
+            </ag-text>
+            <ag-text>
+              <p>Developed by three technology leaders within production Agriculture who became tired of new technologies coming into the industry while most farmers only utilize 10-20% of the technologies they have already put in place. In efforts to change this and help growers optimize their organizations through the efficient use of technology.</p>
+              <p>Learn more here (redirect to the markets served - Agtech Grower Audit page)</p>
+            </ag-text>
+          </ag-flex>
+        </div>
+      </ag-flex><!-- What's New END -->
+
+      <!-- Contat Us START -->
+      <ag-flex justify="center">
+        <div class="container">
+          <ag-flex justify="space-between">
+
+            <ag-flex direction="column">
+              <ag-divider height="20px"></ag-divider>
+              <ag-heading>
+                <ag-text strong light tag="h">
+                  <h1>Get in Touch</h1>
+                </ag-text>
+              </ag-heading>
+            </ag-flex>
+
+          </ag-flex>
+        </div>
+      </ag-flex>
     </main>
   </body>
 </html>

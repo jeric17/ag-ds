@@ -47,6 +47,9 @@ a {
 .strong {
   font-weight: bold;
 }
+.thin {
+  font-weight: normal;
+}
 .nav {
   position: absolute;
   top: 30px;
@@ -82,4 +85,62 @@ a {
 .how-we-work-card {
   display: block;
   width: 580px;
+}
+.steps {
+  padding: 2em 0;
+  background-color: #1a1a1a;
+}
+.steps ag-card {
+  min-width: 30%;
+  display: block;
+  height: 430px;
+}
+.steps ag-card:nth-child(2) {
+  margin: 0 1em;
+}
+.steps h2 {
+  line-height: 1em;
+}
+.whats-new {
+  background-color: #1a1a1a;
+}
+.small-heading {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+
+  .carousel1-h1 {
+    font-size: 23px;
+  }
+
+  .carousel1-h2 {
+    font-size: 17px;
+  }
+
+  .about-image {
+    margin: 0 0 1em;
+  }
+
+  .how-we-work-card {
+    width: 100%;
+  }
+
+  .steps ag-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .steps ag-card:nth-child(2) {
+    margin: 1em 0;
+  }
+
+  .top-nav {
+    display: none;
+  }
 }

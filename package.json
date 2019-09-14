@@ -1,7 +1,7 @@
 {
   "name": "ag-ds",
   "version": "1.0.0",
-  "description": "design system for agtech insight",
+  "description": "ag design system",
   "module": "dist/index.es.js",
   "main": "index.js",
   "scripts": {

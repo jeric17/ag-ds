@@ -18,6 +18,7 @@ export class Carousel extends LitElement {
         display: flex;
         height: 100vh;
         width: 100%;
+        overflow-x: hidden;
       }
       .content {
         display: flex;

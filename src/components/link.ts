@@ -4,9 +4,13 @@ import { LitElement, html, customElement, property, css, CSSResult, TemplateResu
 export class Link extends LitElement {
 
   @property({ type: Boolean }) active: boolean;
+  @property({ type: String }) activeLink: string;
 
   static get styles(): CSSResult {
     return css`
+      :host {
+        display: block;
+      }
       .root {
         cursor: pointer;
         display: flex;
@@ -24,6 +28,14 @@ export class Link extends LitElement {
         background-color: var(--primary-color);
       }
     `;
+  }
+
+  connectedCallback() {
+    const isActive = this.activeLink && window.location.pathname.match(this.activeLink);
+    if (isActive && isActive.index === 0) {
+      this.active = true;
+    }
+    super.connectedCallback();
   }
 
   render(): TemplateResult {
