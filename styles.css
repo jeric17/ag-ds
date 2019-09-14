@@ -44,6 +44,15 @@ a {
 .primary-text {
   color: var(--primary-color);
 }
+.secondary-text {
+  color: var(--secondary-color);
+}
+.warning-text {
+  color: var(--warning-color);
+}
+.success-text {
+  color: var(--success-color);
+}
 .strong {
   font-weight: bold;
 }
@@ -107,7 +116,12 @@ a {
 .small-heading {
   font-size: 20px;
 }
-
+.large-text {
+  font-size: 52px;
+}
+.content-wrapper {
+  padding: 48px 0;
+}
 @media (max-width: 800px) and (orientation: portrait) {
   .container {
     width: 100%;

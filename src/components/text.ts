@@ -8,6 +8,7 @@ export class Text extends LitElement {
   @property({ type: Boolean }) italic: boolean;
   @property({ type: Boolean }) light: boolean;
   @property({ type: Boolean }) success: boolean;
+  @property({ type: Boolean }) secondary: boolean;
   @property({ type: Boolean }) warning: boolean;
   @property({ type: Boolean }) strong: boolean;
   @property({ type: Boolean }) nowrap: boolean;
@@ -68,6 +69,7 @@ export class Text extends LitElement {
   get cx() {
     return cx({
       primary: this.primary,
+      secondary: this.secondary,
       italic: this.italic,
       light: this.light,
       warning: this.warning,

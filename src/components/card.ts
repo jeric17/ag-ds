@@ -9,6 +9,10 @@ export class Card extends LitElement {
 
   static get styles(): CSSResult {
     return css`
+      :host {
+        display: block;
+        width: 100%;
+      }
       .root {
         background-color: #1a1a1a;
         opacity: 0.85;

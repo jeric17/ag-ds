@@ -1,10 +1,12 @@
 import { LitElement, html, customElement, property, css, CSSResult, TemplateResult } from 'lit-element';
+import { cx } from '../utils';
 
 @customElement('ag-link')
 export class Link extends LitElement {
 
   @property({ type: Boolean }) active: boolean;
   @property({ type: String }) activeLink: string;
+  @property({ type: Boolean }) noLine: boolean;
 
   static get styles(): CSSResult {
     return css`
@@ -27,6 +29,9 @@ export class Link extends LitElement {
       .active {
         background-color: var(--primary-color);
       }
+      .noLine .line {
+        display: none;
+      }
     `;
   }
 
@@ -38,9 +43,16 @@ export class Link extends LitElement {
     super.connectedCallback();
   }
 
+  get cls() {
+    return cx({
+      root: true,
+      noLine: this.noLine
+    });
+  }
+
   render(): TemplateResult {
     return html`
-      <div class="root">
+      <div class="${this.cls}">
         <ag-text ?primary="${this.active}" nowrap>
           <slot></slot>
         </ag-text>

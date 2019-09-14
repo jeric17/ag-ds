@@ -10,5 +10,6 @@ export { Image } from './components/image';
 export { Flex } from './components/flex';
 export { Heading } from './components/heading';
 export { Link } from './components/link';
+export { ListItem } from './components/list-item';
 export { Menu } from './components/menu';
 export { Toggle } from './components/toggle';

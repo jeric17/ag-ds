@@ -1,0 +1,266 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="../dist/index.es.js"></script>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <ag-flex direction="column" items="center">
+
+        <!-- Main nav START -->
+        <nav class="nav top-nav">
+          <div class="container">
+            <ag-flex justify="space-between" items="center">
+              <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
+              <ag-flex justify="end">
+                <ag-link class="nav-item" activeLink="/home">
+                  <a href="/">HOME</a>
+                </ag-link>
+                <ag-menu>
+                  <ag-link style="margin-right: 2em;" slot="menu" activeLink="/markets-served">
+                    <a href="/">MARKETS SERVED</a>
+                  </ag-link>
+                  <ag-flex direction="column" slot="menu-list">
+                    <ag-link activeLink="/markets-served/grower-agtech-audit" noline>
+                      <a href="/markets-served/grower-agtech-audit">Grower AgTech Audit</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/corporate-and-retailers" noline>
+                      <a href="/markets-served/corporate-and-retailers">Corporates and retailers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/agribusiness" noline>
+                      <a href="/markets-served/agribusiness">Agribusiness</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/growers-packers-shippers" noline>
+                      <a href="/markets-served/growers-packers-shippers">Growers packers shippers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/investors" noline>
+                      <a href="/markets-served/investors">Investors</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/governments" noline>
+                      <a href="/markets-served/governments">Governments</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/non-government-organisations" noline>
+                      <a href="/markets-served/non-government-organisations">Non Government Organisations (NGO)</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/public-speaking-and-events" noline>
+                      <a href="/markets-served/public-speaking-and-events">Public Speaking and Events</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/startups-and-accererators" noline>
+                      <a href="/markets-served/startups-and-accererators">Startups and accererators</a>
+                    </ag-link>
+                  </ag-flex>
+                </ag-menu>
+                <ag-link class="nav-item" activeLink="/meet-the-team">
+                  <a href="/">MEET THE TEAM</a>
+                </ag-link>
+                <ag-link class="nav-item" activeLink="/media">
+                  <a href="/">MEDIA</a>
+                </ag-link>
+                <ag-link activeLink="/contact-us">
+                  <a href="/">CONTACT US</a>
+                </ag-link>
+              </ag-flex>
+            </ag-flex><!-- Main nav END -->
+          </div>
+        </nav><!-- Nav -->
+
+
+        <ag-banner imagesrc="../assets/grower-agtech-audit.png">
+          <ag-flex justify="center" items="center" fullheight>
+            <ag-text tag="h" strong>
+              <h1 class="large-text">Grower <span class="primary-text">Agtech</span> Audit</h1>
+            </ag-text>
+          </ag-flex>
+        </ag-banner>
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text light>
+                    <p>In 2019 we streamlined our approach and combined the experiences and processes three of our members have had to offer the Grower AgTech Audit. We have found that typically only 10-20% the potential of current on-farm technology is being utilized due to lack of compatibility, support, training, integration or resources needed. The Audit builds a custom plan to help growers optimize their organizations through the efficient use of technology.</p>
+                  </ag-text>
+                  <ag-divider height="24px"></ag-divider>
+                  <ag-toggle>
+                    <ag-flex direction="column">
+                      <ag-text>
+                        <p>Using surveys, interviews, group discussions, ride-a-longs and other tools, we take an outside look into an operation to evaluate what tech is currently used and how to get more value from those resources. Next, we build a strategic 5-year technology implementation plan in-line with company goals.
+                          The result is a roadmap to follow providing recommendations and a framework, with measurable milestones along the way, that create actions and a company culture around innovation. Once we complete the audit, we sit down with the appropriate leadership to present our roadmap, discuss findings, suggestions and next steps.
+                          Our client now has the tools necessary to implement the plan internally or we can continue working with the team to manage projects and their implementation, further ensuring success.</p>
+                      </ag-text>
+                      <ag-divider height="20px"></ag-divider>
+                      <ag-text strong tag="h">
+                        <h4>WE OFFER 3 GROWER AGTECH AUDIT PACKAGES</h4>
+                      </ag-text>
+                      <ag-divider height="20px"></ag-divider>
+                      <ag-flex justify="space-between" smalldirection="column">
+                        <ag-flex direction="column">
+                          <ag-text secondary tag="h" strong>
+                            <h4>Basic-Quick Grower AgTech Audit</h4>
+                          </ag-text>
+                          <ag-text secondary>
+                            <p class="no-margin">Price: $3,000</p>
+                          </ag-text>
+                          <ag-divider></ag-divider>
+                          <ag-list-item color="secondary">
+                            <ag-text>
+                              <p>Gross revenue of <span class="secondary-text strong">less than $5M</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="secondary">
+                            <ag-text>
+                              <p>Taret <span class="secondary-text strong">1 crop</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-text secondary tag="h" strong>
+                            <h4>INCLUDES:</h4>
+                          </ag-text>
+                          <ag-list-item color="secondary">
+                            <ag-text secondary>
+                              <p>Includes 1 day with one auditor onsite</p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="secondary">
+                            <ag-text>
+                              <p>Presentation of findings and next steps</p>
+                            </ag-text>
+                          </ag-list-item>
+                        </ag-flex><!-- column 1 END -->
+
+                        <ag-flex direction="column">
+                          <ag-text success tag="h" strong>
+                            <h4>Presentation of findings and next steps</h4>
+                          </ag-text>
+                          <ag-text success>
+                            <p class="no-margin">Price: $12,000</p>
+                          </ag-text>
+                          <ag-divider></ag-divider>
+                          <ag-list-item color="success">
+                            <ag-text>
+                              <p>Gross revenue of <span class="success-text strong">less than $15M</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="success">
+                            <ag-text>
+                              <p>Target up to <span class="success-text strong">3 most valuable crops</span></p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-text success tag="h" strong>
+                            <h4>INCLUDES:</h4>
+                          </ag-text>
+                          <ag-list-item color="success">
+                            <ag-text>
+                              <p>Initial planning</p>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="success">
+                            <ag-text strong success>
+                              <h4>3 days with one auditor onsite and 3-hour recap</h4>
+                            </ag-text>
+                          </ag-list-item>
+                          <ag-list-item color="success">
+                            <ag-text>
+                              <p>Presentation of findings and next steps</p>
+                            </ag-text>
+                          </ag-list-item>
+                        </ag-flex><!-- column 2 END -->
+                      </ag-flex>
+                    </ag-flex>
+                  </ag-toggle>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card><!-- Main Text Content END -->
+
+        <ag-flex justify="center">
+          <div class="container">
+            <div class="content-wrapper">
+              <ag-flex
+                direction="column"
+                items="center"
+              >
+                <ag-text textalign="center">
+                  <p>Take our initial servay to find out how we can help you maximize your technologies</p>
+                </ag-text>
+                <ag-divider></ag-divider>
+                <ag-button>TAKE A SURVEY</ag-button>
+              </ag-flex>
+            </div>
+          </div>
+        </ag-flex><!-- Survey END -->
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text primary tag="h" strong>
+                    <h3>AREAS OF EXPERTISE</h3>
+                  </ag-text>
+                  <ag-divider></ag-divider>
+                  <ag-flex justify="space-between">
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          Customized strategic planning
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Technology integration support
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Aligning business strategy with innovation plans
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Operations efficiency increase, input costs down
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Technology adoption increase
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 1 END -->
+
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          Realizing business value of innovation
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          HR resource needs and training for technology
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Combining many platforms/data sets into one
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          Process gaps
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 2 END -->
+                  </ag-flex>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card>
+
+      </ag-flex><!-- Root Flex End -->
+    </main>
+  </body>
+</html>
