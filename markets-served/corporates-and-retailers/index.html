@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="../dist/index.es.js"></script>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <ag-flex direction="column" items="center">
+
+        <!-- Main nav START -->
+        <nav class="nav top-nav">
+          <div class="container">
+            <ag-flex justify="space-between" items="center">
+              <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
+              <ag-flex justify="end">
+                <ag-link class="nav-item" activeLink="/home">
+                  <a href="/">HOME</a>
+                </ag-link>
+                <ag-menu>
+                  <ag-link style="margin-right: 2em;" slot="menu" activeLink="/markets-served">
+                    <a href="/">MARKETS SERVED</a>
+                  </ag-link>
+                  <ag-flex direction="column" slot="menu-list">
+                    <ag-link activeLink="/markets-served/grower-agtech-audit" noline>
+                      <a href="/markets-served/grower-agtech-audit">Grower AgTech Audit</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/corporates-and-retailers" noline>
+                      <a href="/markets-served/corporates-and-retailers">Corporates and retailers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/agribusiness" noline>
+                      <a href="/markets-served/agribusiness">Agribusiness</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/growers-packers-shippers" noline>
+                      <a href="/markets-served/growers-packers-shippers">Growers packers shippers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/investors" noline>
+                      <a href="/markets-served/investors">Investors</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/governments" noline>
+                      <a href="/markets-served/governments">Governments</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/non-government-organisations" noline>
+                      <a href="/markets-served/non-government-organisations">Non Government Organisations (NGO)</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/public-speaking-and-events" noline>
+                      <a href="/markets-served/public-speaking-and-events">Public Speaking and Events</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/startups-and-accererators" noline>
+                      <a href="/markets-served/startups-and-accererators">Startups and accererators</a>
+                    </ag-link>
+                  </ag-flex>
+                </ag-menu>
+                <ag-link class="nav-item" activeLink="/meet-the-team">
+                  <a href="/">MEET THE TEAM</a>
+                </ag-link>
+                <ag-link class="nav-item" activeLink="/media">
+                  <a href="/">MEDIA</a>
+                </ag-link>
+                <ag-link activeLink="/contact-us">
+                  <a href="/">CONTACT US</a>
+                </ag-link>
+              </ag-flex>
+            </ag-flex><!-- Main nav END -->
+          </div>
+        </nav><!-- Nav -->
+
+
+        <div class="banner">
+          <ag-flex justify="center" items="center" fullheight>
+            <ag-text tag="h" strong light>
+              <h1 class="large-text">
+                Corporates <span class="primary-text">and</span> Retailers
+              </h1>
+            </ag-text>
+          </ag-flex>
+        </div>
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text light>
+                    <p>
+                      You have a business to run, but you see the need and opportunity to integrate technology throughout your business. We build an internal eco-system to integrate innovation and industry leadership into the traditions that make up your company’s success. Our team works with your organization to determine what solutions are needed, solidify meaningful milestones, then build a customized plan for how to develop them and get them implemented, exceeding supplier, customer and consumer needs. 
+                    </p>
+                  </ag-text>
+                  <ag-divider height="24px"></ag-divider>
+                  <ag-toggle>
+                    <ag-flex direction="column">
+                      <ag-text>
+                        <p>
+                          Oftentimes the hardest part of innovation is deciding where to start, which is the best place for us to engage. We will work with your employees to ensure everyone involved has a benefit in committing to innovation and build. Whether it’s  better visibility into supply chain, using Blockchain to connect your brand with the consumer, or meet food safety needs, we dive into your operation and set you up to live in an optimal realm.
+                        </p>
+                      </ag-text>
+                      <ag-divider></ag-divider>
+                      <ag-text>
+                        <p>
+                          <p>
+                            Consumer trends and regulations are constantly pushing you to innovate, but how can you ensure that everyone in the value chain has incentive to adopt technology and help gain the big data and analytics you dream of? Our team works through the supply chain to advise and implement the best advancements and adjustments for your business.
+                          </p>
+                        </p>
+                      </ag-text>
+                    </ag-flex>
+                  </ag-toggle>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card><!-- Main Text Content END -->
+
+        <ag-flex justify="center">
+          <div class="container">
+            <div class="content-wrapper">
+              <ag-flex
+                direction="column"
+                items="center"
+              >
+                <ag-button>SCHEDULE AN APPOINTMENT</ag-button>
+              </ag-flex>
+            </div>
+          </div>
+        </ag-flex><!-- Survey END -->
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text primary tag="h" strong>
+                    <h3>AREAS OF EXPERTISE</h3>
+                  </ag-text>
+                  <ag-divider></ag-divider>
+                  <ag-flex justify="space-between" smalldirection="column">
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Process improvement through innovation and technology
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            How to best utilize existing tech
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Most valuable areas to integrate tech into your business and supply chain
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Sourcing or evaluating the best tech for your unique business
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Global industry trends
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 1 END -->
+
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Combining solutions into a central platform
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Installation, and support training to increase adoption
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Standard Operating Procedures  for innovation (SOP)
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>
+                            Building a culture of constant innovation
+                          </span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 2 END -->
+                  </ag-flex>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card>
+
+      </ag-flex><!-- Root Flex End -->
+    </main>
+  </body>
+</html>
