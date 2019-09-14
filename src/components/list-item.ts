@@ -15,6 +15,7 @@ export class ListItem extends LitElement {
         fill: var(--primary-color);
         margin-right: 16px;
         width: 16px;
+        min-width: 16px;
       }
       .secondary .svg-icon {
         fill: var(--secondary-color);

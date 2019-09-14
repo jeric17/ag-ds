@@ -122,6 +122,11 @@ a {
 .content-wrapper {
   padding: 48px 0;
 }
+.banner {
+  background-color: #141414;
+  height: 500px;
+  width: 100%;
+}
 @media (max-width: 800px) and (orientation: portrait) {
   .container {
     width: 100%;

@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="../dist/index.es.js"></script>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <ag-flex direction="column" items="center">
+
+        <!-- Main nav START -->
+        <nav class="nav top-nav">
+          <div class="container">
+            <ag-flex justify="space-between" items="center">
+              <ag-image imageurl="/assets/logo.png" imagewidth="190px"></ag-image>
+              <ag-flex justify="end">
+                <ag-link class="nav-item" activeLink="/home">
+                  <a href="/">HOME</a>
+                </ag-link>
+                <ag-menu>
+                  <ag-link style="margin-right: 2em;" slot="menu" activeLink="/markets-served">
+                    <a href="/">MARKETS SERVED</a>
+                  </ag-link>
+                  <ag-flex direction="column" slot="menu-list">
+                    <ag-link activeLink="/markets-served/grower-agtech-audit" noline>
+                      <a href="/markets-served/grower-agtech-audit">Grower AgTech Audit</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/corporate-and-retailers" noline>
+                      <a href="/markets-served/corporate-and-retailers">Corporates and retailers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/agribusiness" noline>
+                      <a href="/markets-served/agribusiness">Agribusiness</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/growers-packers-shippers" noline>
+                      <a href="/markets-served/growers-packers-shippers">Growers packers shippers</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/investors" noline>
+                      <a href="/markets-served/investors">Investors</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/governments" noline>
+                      <a href="/markets-served/governments">Governments</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/non-government-organisations" noline>
+                      <a href="/markets-served/non-government-organisations">Non Government Organisations (NGO)</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/public-speaking-and-events" noline>
+                      <a href="/markets-served/public-speaking-and-events">Public Speaking and Events</a>
+                    </ag-link>
+                    <ag-link activeLink="/markets-served/startups-and-accererators" noline>
+                      <a href="/markets-served/startups-and-accererators">Startups and accererators</a>
+                    </ag-link>
+                  </ag-flex>
+                </ag-menu>
+                <ag-link class="nav-item" activeLink="/meet-the-team">
+                  <a href="/">MEET THE TEAM</a>
+                </ag-link>
+                <ag-link class="nav-item" activeLink="/media">
+                  <a href="/">MEDIA</a>
+                </ag-link>
+                <ag-link activeLink="/contact-us">
+                  <a href="/">CONTACT US</a>
+                </ag-link>
+              </ag-flex>
+            </ag-flex><!-- Main nav END -->
+          </div>
+        </nav><!-- Nav -->
+
+
+        <div class="banner">
+          <ag-flex justify="center" items="center" fullheight>
+            <ag-text tag="h" strong light>
+              <h1 class="large-text">Investors</h1>
+            </ag-text>
+          </ag-flex>
+        </div>
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text light>
+                    <p>Ag Tech Insight (ATI) provides guidance and direction for investors working in the Ag Technology industry. We track over 3,000 digital AgTech companies, many who we have met directly through our network. This database allows us to look at a wide view of companies in a specific sector. </p>
+                  </ag-text>
+                  <ag-divider height="24px"></ag-divider>
+                  <ag-toggle>
+                    <ag-text>
+                      <p>Our AgTech experience, coupled with decades of grower relationships, business management, customer service, start-up, distribution channels, marketing, and investment success makes AgTech Insight the perfect partner to guide your investments into the Ag centric market. Our world class list of partners and advisors, along with our available software/hardware, research & development teams, deliver the imperative expertise to assist your venture at any level. Our specialized expertise provides premier deal flow and due diligence, helping place your investment into the most promising companies in the world. We can also hold an advisory or board seat to help keep a company stay on track.</p>
+                    </ag-text>
+                  </ag-toggle>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card><!-- Main Text Content END -->
+
+        <ag-flex justify="center">
+          <div class="container">
+            <div class="content-wrapper">
+              <ag-flex
+                direction="column"
+                items="center"
+              >
+                <ag-button>SCHEDULE AN APPOINTMENT</ag-button>
+              </ag-flex>
+            </div>
+          </div>
+        </ag-flex><!-- Survey END -->
+
+        <ag-card dark>
+          <ag-flex justify="center">
+            <div class="container">
+              <div class="content-wrapper">
+                <ag-flex direction="column">
+                  <ag-text primary tag="h" strong>
+                    <h3>AREAS OF EXPERTISE</h3>
+                  </ag-text>
+                  <ag-divider></ag-divider>
+                  <ag-flex justify="space-between" smalldirection="column">
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Deal-flow</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Due diligence</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Board seats / startup advisory</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Strategic investment planning – rounding out your portfolio</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Competitive market and pricing landscape</span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 1 END -->
+
+                    <ag-flex direction="column">
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Macro to micro market trendst</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Go to Market (GtM), including grower-led feedback, end-user interface needs, new territory requirements</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Industry partnerships</span>
+                        </ag-text>
+                      </ag-list-item>
+                      <ag-list-item>
+                        <ag-text>
+                          <span>Follow-on investment advisory</span>
+                        </ag-text>
+                      </ag-list-item>
+                    </ag-flex><!-- column 2 END -->
+                  </ag-flex>
+                </ag-flex>
+              </div>
+            </div>
+          </ag-flex>
+        </ag-card>
+
+      </ag-flex><!-- Root Flex End -->
+    </main>
+  </body>
+</html>
